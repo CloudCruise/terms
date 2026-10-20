@@ -59,7 +59,7 @@ Violations may result in immediate suspension or termination.
 ## 7. Credentials, Automation Runs & Observability
 
 * **Credentials.** You may supply portal log-ins, API keys, or other secrets so that agents can perform tasks. You authorize CloudCruise to store and encrypt such credentials, or (if self-hosted) to temporarily cache them in memory while a run executes.
-* **Session Data.** CloudCruise records agent step logs, network traffic metadata, screenshots and session replays to help you audit, debug, and observe performance. By default, run artifacts are retained for account life time; configurable at the workspace level.
+* **Session Data.** CloudCruise records agent step logs, network traffic metadata, screenshots and session replays to help you audit, debug, and observe performance. Run artifacts are retained for the period configured for your workspace (between 1 and 365 days; 30 days by default).
 * **Consent.** You represent that you have provided all necessary notices and obtained all consents required for CloudCruise to process data on your behalf, including any end-user or patient consents for PHI.
 
 ---
@@ -84,7 +84,7 @@ You are responsible for taxes, duties, and withholdings associated with your pur
 
 ## 10. PHI & HIPAA
 
-CloudCruise can operate under a **Business Associate Agreement (BAA)** for covered entities or business associates subject to HIPAA. Unless you have an executed BAA with us, **do not upload PHI**. If you sign a BAA, that agreement supplements (and, in case of conflict, supersedes) these Terms for PHI-related processing.
+CloudCruise can operate under a **Business Associate Agreement (BAA)** for covered entities or business associates subject to HIPAA. An owner of your organization can accept CloudCruise's standard BAA on the Compliance page of the organization's settings; accepting it there executes the BAA on the organization's behalf. Customers on eligible plans may instead negotiate a custom BAA. Unless you have an executed BAA with us, **do not upload PHI**. If you sign a BAA, that agreement supplements (and, in case of conflict, supersedes) these Terms for PHI-related processing.
 
 ---
 
@@ -96,7 +96,7 @@ Except for your data and browser agents you author, all software, documentation,
 
 ## 12. Third-Party Services
 
-The Services integrate with third-party providers (e.g., LLM APIs, CAPTCHA solvers, proxy networks). CloudCruise is not responsible for the content, functionality, or data-handling practices of such providers. Your interactions with third parties are solely between you and them.
+The Services integrate with third-party providers (e.g., LLM APIs and proxy networks). Except as provided in an executed BAA with respect to PHI, CloudCruise is not responsible for the content, functionality, or data-handling practices of such providers. Your interactions with third parties are solely between you and them.
 
 ---
 
