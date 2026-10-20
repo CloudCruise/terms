@@ -63,9 +63,10 @@ We **do not** use customer data to train any third-party generative AI models.
 
 | Recipient Type                  | Examples                                              | Safeguards                                                   |
 | ------------------------------- | ----------------------------------------------------- | ------------------------------------------------------------ |
-| **Service Providers**           | Stripe, AWS, Sentry                                   | Data Processing Agreements; least-privilege access           |
+| **Service Providers**           | Stripe, AWS, Supabase, Vercel, Sentry                 | Data Processing Agreements; least-privilege access           |
+| **AI & Automation Providers**   | OpenAI, Anthropic, Google, Microsoft Azure, Langfuse, proxy network providers | Used to execute, repair and monitor your automations; Business Associate Agreements where PHI is processed |
 | **Customer-Authorised Parties** | Slack Connect channels, your downstream APIs          | Only on your instruction                                     |
-| **Analytics & Cookies**         | Google Analytics, Amplitude                           | Pseudonymised where possible                                 |
+| **Analytics & Cookies**         | Google Analytics, PostHog                             | Pseudonymised where possible                                 |
 | **Business Transfers**          | Merger, acquisition, or asset sale                    | Successor assumes same privacy obligations                   |
 | **Legal / Safety**              | Law enforcement, courts                               | Only when required or to protect rights, safety, or property |
 
@@ -101,7 +102,7 @@ No internet or storage method is 100 % secure, but we work hard to safeguard you
 | ----------------- | --------------------------------- | ------------------------------------- |
 | Account & Profile | Life of account + 30 days         | Allow reactivation / resolve disputes |
 | Payment Records   | 7 years (tax law)                 | Regulatory & audit requirements       |
-| Agent-Run Logs    | Life of account (configurable)    | Debugging & quality metrics           |
+| Agent-Run Logs    | Workspace setting: 1–365 days (default 30) | Debugging & quality metrics  |
 | Back-ups          | 35 days rolling                   | Disaster recovery                     |
 
 We may keep anonymised, aggregated statistics indefinitely.
